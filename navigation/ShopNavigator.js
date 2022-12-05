@@ -8,13 +8,11 @@ import ItemDetailScreen from "../screens/ItemDetailScreen";
 const Stack = createNativeStackNavigator();
 const ShopNavigator = () => {
     return (
-        <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={CategoriesScreen} />
                 <Stack.Screen name="Category" component={CategoryScreen} />
                 <Stack.Screen name="Detail" component={ItemDetailScreen} />
             </Stack.Navigator>
-        </NavigationContainer>
     )
 }
 export default ShopNavigator;

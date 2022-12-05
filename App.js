@@ -1,6 +1,6 @@
 import {useFonts} from 'expo-font';
 import AppLoading from 'expo-app-loading';
-import ShopNavigator from './navigation/ShopNavigator';
+import MainNavigator from './navigation';
 
 export default function App() {
   const [loaded] = useFonts({
@@ -10,6 +10,6 @@ export default function App() {
   });
   if (!loaded) return <AppLoading />;
   return (
-    <ShopNavigator/>
+    <MainNavigator/>
   );
 }
